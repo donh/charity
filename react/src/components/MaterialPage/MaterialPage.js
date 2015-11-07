@@ -12,7 +12,7 @@ class MaterialPage extends Component {
   };
 
   render() {
-    const title = 'Material Design Lite';
+    const title = 'Sophia Foundation';
     this.context.onSetTitle(title);
     return (
       <div className="MaterialPage">
