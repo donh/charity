@@ -44,6 +44,7 @@ class Html extends Component {
         <div id="app" dangerouslySetInnerHTML={{__html: this.props.body}} />
         <script src="/app.js"></script>
         <script dangerouslySetInnerHTML={this.trackingCode()} />
+        <script src="/vendor/material-design-lite/material.min.js"></script>
       </body>
       </html>
     );

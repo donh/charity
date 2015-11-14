@@ -2,6 +2,7 @@
 
 import React, { PropTypes, Component } from 'react';
 import styles from './App.css';
+import materialDesign from '../../public/vendor/material-design-lite/material.min.css';
 import withContext from '../../decorators/withContext';
 import withStyles from '../../decorators/withStyles';
 import Header from '../Header';
@@ -10,6 +11,8 @@ import Footer from '../Footer';
 
 @withContext
 @withStyles(styles)
+@withStyles(materialDesign)
+
 class App extends Component {
 
   static propTypes = {
@@ -19,7 +22,8 @@ class App extends Component {
 
   render() {
     return !this.props.error ? (
-      <div>
+      <div className="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+            mdl-layout--fixed-header">
         <Header />
         {this.props.children}
         <Feedback />
