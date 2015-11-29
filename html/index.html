@@ -7,6 +7,8 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="./vendor/material-design-lite/material.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 		<!--
 		<style id="css"><%= css %></style>
@@ -19,19 +21,28 @@
 		<!--
 		<div id="app"><%= body %></div>
 		-->
+    <!--start Header -->
+    <div class="Header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row top-banner">
+          <img class="Header-brand" src="./img/redcross.png" />
+        </div>
+      </header>
+    </div>
+    <!--end Header -->
 		<div id="main">
 			<h3>Sophia Foundation</h3>
-			<img className="photo" src="img/1600x380-Donate-Blood-button.jpg" height="380" width="1600" alt="Donate Blood through the American Red Cross"/>
+			<img class="photo" src="img/1600x380-Donate-Blood-button.jpg" height="380" width="1600" alt="Donate Blood through the American Red Cross"/>
 		</div>
 		<div id="container">
 			<section id="home-aspot" data-action="homeAspot" data-controller="wcm" data-ga-module="aspot promo module">
-				<div className="anythingSlider anythingSlider-default activeSlider">
-					<div className="anythingWindow">
-						<ul className="slides anythingBase ulAnythingBase">
-							<li className="panel activePage panelActivePage" data-ga-module="aSpotHomePersonalPromoItem">
-								<img className="photo" src="img/1600x380-Donate-Blood-button.jpg" height="380" width="1600" alt="Donate Blood through the American Red Cross"/>
-								<div className="fixed-bg top-shadow"></div>
-									<a className="panel-link focusedLink" href="http://www.redcross.org/blood?campname=biomed&amp;campmedium=aspot_unassigned" data-ga-action="
+				<div class="anythingSlider anythingSlider-default activeSlider">
+					<div class="anythingWindow">
+						<ul class="slides anythingBase ulAnythingBase">
+							<li class="panel activePage panelActivePage" data-ga-module="aSpotHomePersonalPromoItem">
+								<img class="photo" src="img/1600x380-Donate-Blood-button.jpg" height="380" width="1600" alt="Donate Blood through the American Red Cross"/>
+								<div class="fixed-bg top-shadow"></div>
+									<a class="panel-link focusedLink" href="http://www.redcross.org/blood?campname=biomed&amp;campmedium=aspot_unassigned" data-ga-action="
 			<c:if test='true'>Content-Homepage Aspot | Unassigned-2 | Give Blood</c:if>|Aspot_Home">
 										&nbsp;
 									</a>
@@ -41,11 +52,70 @@
 				</div>
 			</section>
 		</div>
+
+    <footer class="mdl-mega-footer">
+      <div class="mdl-mega-footer__middle-section">
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Features</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Updates</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Details</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Specs</a></li>
+            <li><a href="#">Tools</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Technology</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Patterns</a></li>
+            <li><a href="#">Usage</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contracts</a></li>
+          </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">FAQ</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Questions</a></li>
+            <li><a href="#">Answers</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="mdl-mega-footer__bottom-section">
+        <div class="mdl-logo">Title</div>
+        <ul class="mdl-mega-footer__link-list">
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Privacy & Terms</a></li>
+        </ul>
+      </div>
+
+    </footer>
 		<!--
 		<script src="https://fb.me/react-0.14.3.js"></script>
 		<script src="https://fb.me/react-dom-0.14.3.js"></script>
 		-->
-		<script src="js/app.js"></script>
+		<script src="./vendor/material-design-lite/material.min.js"></script>
+    <script src="js/app.js"></script>
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<!--
 		<script>
