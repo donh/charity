@@ -1,4 +1,90 @@
-.MaterialPage-container {
+#primary-nav {
+    margin: 0 auto;
+    padding: 0 12px 0 129px;
+    width: 1075px;
+}
+
+#primary-nav:after {
+    content: ".";
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+
+#primary-nav .nav-list {
+    display: inline;
+    float: left;
+    height: 41px;
+}
+
+nav ul, nav ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none outside none;
+}
+
+#primary-nav .nav-item {
+    display: inline;
+    float: left;
+    color: #6d6e70;
+    font-family: "StandardCTExtraBold",Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+nav li {
+    list-style: none;
+}
+
+#primary-nav .first {
+    margin-right: 0;
+    position: relative;
+    left: -30px;
+    margin-right: -30px;
+}
+
+#primary-nav .nav-link {
+    background: url('../img/main-nav-delim.png?1360164509') no-repeat 100% 6px;
+    color: #6d6e70;
+    display: block;
+    padding: 14px 25px;
+}
+
+a:link {
+    -webkit-tap-highlight-color: #b4d5ff;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #3c7fad;
+}
+
+a {
+    color: #3c7fad;
+}
+
+#primary-nav div.search-form {
+    display: inline;
+    float: left;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+
+/*.MaterialPage-container {
 	margin: 0 auto;
 	padding: 0 0 40px;
 	max-width: var(--max-content-width);
@@ -29,4 +115,4 @@
 
 .photo = {
 	left: -181px;
-};
+};*/
